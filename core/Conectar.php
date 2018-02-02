@@ -18,7 +18,7 @@ class Conectar{
         
         if($this->driver=="pgsql" || $this->driver==null){
        
-        	$con = pg_connect("host=186.4.203.42 port=5432 dbname=suda_politicas user=postgres password=.Romina.2012 ");
+        	$con = pg_connect("host=186.4.203.42 port=5432 dbname=encofrados_marcelo user=postgres password=.Romina.2012 ");
         	//$con = pg_connect("host=192.168.10.10 port=5432 dbname=ad_vivienda user=postgres password=.Romina.2012 ");
 
         	if(!$con){
@@ -43,7 +43,7 @@ class Conectar{
         	{
 
         		
-        		$pdo = new PDO('pgsql:host=186.4.203.42;port=5432;dbname=suda_politicas', 'postgres', '.Romina.2012' );
+        		$pdo = new PDO('pgsql:host=186.4.203.42;port=5432;dbname=encofrados_marcelo', 'postgres', '.Romina.2012' );
 				$fpdo = new FluentPDO($pdo);
             	
             }

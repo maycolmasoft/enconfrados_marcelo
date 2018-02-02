@@ -230,15 +230,11 @@ class UsuariosController extends ControladorBase{
     
     public function Login(){
     
-    	//Creamos el objeto usuario
+    	session_start();
     	$usuarios=new UsuariosModel();
     
-    	//Conseguimos todos los usuarios
-    	$allusers=$usuarios->getLogin();
-    	 
-    	//Cargamos la vista index y l e pasamos valores
-    	$this->view("Login",array(
-    			"allusers"=>$allusers
+    	$this->view("Index",array(
+    			"allusers"=>""
     	));
     }
     public function Bienvenida(){

@@ -2,30 +2,29 @@
 <html lang="es">
       <head>
         <title>Usuarios - aDocument 2015</title>
-         <?php include("view/modulos/links.php"); ?>
-           <link rel="stylesheet" href="view/adminLTE/plugins/datatables/dataTables.bootstrap.css">
+        <?php include("view/modulos/links.php"); ?>
+        <link rel="stylesheet" href="view/adminLTE/plugins/datatables/dataTables.bootstrap.css">
       </head>
-      <body onload="lista_usuarios();">
-      <div class="wrapper">
- 
-      <header class="main-header">
-        <?php include('view/modulos/head.php');?>
-      </header>
+      <header class="main-header"><?php include('view/modulos/head.php'); ?></header>
+     
+      <body class="hold-transition skin-blue sidebar-mini" onload="lista_usuarios();">
       
-      <aside class="main-sidebar">
-	  <?php include('view/modulos/slide.php');
+     
+      
+      
+      <?php include('view/modulos/slide.php');
         
         $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
         $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
         $fecha=$dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
         ?>
-      </aside>
+    
  
     
          <div class="content-wrapper">
          <section class="content-header">
          <h1>
-         <?php   echo "Sudamericano";?>
+          <span class="logo-lg"><b>Encofrados</b>MARCELO</span>
          <small><?php echo $fecha; ?></small>
          </h1>
          <ol class="breadcrumb">
@@ -155,19 +154,10 @@
          </div>
   
   
-	    <?php include('view/modulos/footer.php'); ?>
-	    <div class="control-sidebar-bg"></div>
-	    </div>
-	  
-	  
-	        
-	    <div class="MsjAjaxForm"></div>
-	    <?php include "view/modulos/script.php"; ?>
     <script src="view/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="view/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>  
+    <script src="view/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script> 
     <script src="view/adminLTE/plugins/noty/packaged/jquery.noty.packaged.min.js"></script> 
-   
-	 
+    
     <script src="view/adminLTE/dist/js/source_parameters.js"></script> 
  	
  	

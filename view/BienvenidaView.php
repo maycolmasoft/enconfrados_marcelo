@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="es">
     <head>
-     <title>Bienvenido - aDocument 2015</title>
-      <?php include("view/modulos/links.php"); ?>
+     <title>Bienvenidos-EncofradosMarcelo</title>
+   
+  <?php include("view/modulos/links.php"); ?>
+      
     </head>
-    <body  style="background-color: #F6FADE;"  onload="pone_users(); pone_roles(); pone_permisos_roles();">
-     <div class="wrapper">
-
-      <!-- Main Header -->
-      <header class="main-header">
+    
+     <header class="main-header">
 
         <!-- Logo -->
         <?php
@@ -16,11 +15,9 @@
         ?>
 
       </header>
-      <!-- Left side column. contains the logo and sidebar -->
-      <aside class="main-sidebar">
-
-        <!-- sidebar: style can be found in sidebar.less -->
-        <?php
+    <body  class="hold-transition skin-blue sidebar-mini"  onload="pone_users(); pone_roles(); pone_permisos_roles();">
+   
+    <?php
         include('view/modulos/slide.php');
         
         $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
@@ -28,17 +25,15 @@
         $fecha=$dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
         
         ?>
-        <!-- /.sidebar -->
-      </aside>
-
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
+        
+        
+        
+        
+         <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-          <?php
-          echo "IndexDocument";
-          ?>
+           <span class="logo-lg"><b>Encofrados</b>MARCELO</span>
             <small><?php echo $fecha; ?></small>
           </h1>
           <ol class="breadcrumb">
@@ -62,19 +57,12 @@
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-
-      <!-- Main Footer -->
-      <?php include('view/modulos/footer.php'); ?>
-      <!-- Add the sidebar's background. This div must be placed
-           immediately after the control sidebar -->
-      <div class="control-sidebar-bg"></div>
-    </div><!-- ./wrapper --> 
-    
-    <div class="MsjAjaxForm"></div>
-    <?php include "view/modulos/script.php"; ?>
-    <script src="view/adminLTE/plugins/morris/morris.min.js"></script>
-    <script src="view/adminLTE/plugins/morris/raphael-min.js"></script>
-    <script src="view/adminLTE/dist/js/source_init.js"></script> 
- 		
+        
+        
+        
+        
+        
+  <?php include('view/modulos/footer.php'); ?>  
+  <script src="view/adminLTE/dist/js/source_init.js"></script> 
     </body>
 </html>
